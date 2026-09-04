@@ -228,11 +228,14 @@
     </footer>
 
    <script>
+        // ⚠️ আপনার হোয়াটসঅ্যাপ নম্বরটি এখানে ৮৮ সহ দেওয়া আছে
         const whatsappNumber = "8801335556732"; 
         const defaultMessage = "হ্যালো Digital Land Solution, আমি আপনাদের ল্যান্ড সার্ভিসের বিষয়ে জানতে চাই।";
         
+        // ফ্লোটিং হোয়াটসঅ্যাপ বাটন সেটআপ
         document.getElementById('whatsappLink').href = https://wa.me{whatsappNumber}?text=${encodeURIComponent(defaultMessage)};
 
+        // ফি হিসাব করার ফাংশন
         function calculateFee() {
             const rate = parseFloat(document.getElementById('surveyType').value);
             const amount = parseFloat(document.getElementById('landAmount').value);
@@ -246,9 +249,22 @@
             resultBox.style.display = 'block';
         }
 
+        // ফর্ম সাবমিট সরাসরি হোয়াটসঅ্যাপে পাঠানোর ফাংশন
         function handleSubmit(event) {
             event.preventDefault();
-            alert('ধন্যবাদ! আপনার অনুরোধটি সফলভাবে গৃহীত হয়েছে। আমাদের প্রতিনিধি দ্রুত আপনার সাথে যোগাযোগ করবেন।');
+            
+            // ফর্ম থেকে ডাটা নেওয়া
+            const name = event.target.elements[0].value;
+            const phone = event.target.elements[1].value;
+            const message = event.target.elements[2].value;
+
+            // সুন্দর করে মেসেজ সাজানো
+            const finalMessage = নতুন ল্যান্ড সার্ভিস আবেদন:\n\n👤 নাম: ${name}\n📞 মোবাইল নম্বর: ${phone}\n💬 বার্তা/বিবরণ: ${message};
+
+            // হোয়াটসঅ্যাপ লিংক তৈরি এবং নতুন ট্যাবে ওপেন করা
+            const wpUrl = https://wa.me{whatsappNumber}?text=${encodeURIComponent(finalMessage)};
+            window.open(wpUrl, '_blank');
+            
             event.target.reset();
         }
     </script>
