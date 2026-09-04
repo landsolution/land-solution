@@ -190,11 +190,11 @@
             <div class="form-group">
                 <label for="surveyType">সেবার ধরন নির্বাচন করুন:</label>
                 <select id="surveyType">
-                    <option value="500">ডিজিটাল ভূমি পরিমাপ (প্রতি শতাংশ ৫০০ টাকা)</option>
-                    <option value="800">মৌজা ম্যাপ বাউন্ডারি লে-আউট (প্রতি শতাংশ ৮০০ টাকা)</option>
-                    <option value="300">ডিজিটাল নকশা ও প্লট ম্যাপিং (প্রতি শতাংশ ৩০০ টাকা)</option>
+                    <option value="300">ডিজিটাল ভূমি পরিমাপ (প্রতি প্লট ৩০০ টাকা)</option>
+                    <option value="800">মৌজা ম্যাপ বাউন্ডারি লে-আউট (প্রতি মেপ ৮০০ টাকা)</option>
+                    <option value="300">ডিজিটাল নকশা ও প্লট ম্যাপিং (প্রতি প্লট ৩০০ টাকা)</option>
                 </select>
-            </div>
+            </div> 
             <div class="form-group">
                 <label for="landAmount">জমির পরিমাণ (শতাংশ/ডেসিমেল):</label>
                 <input type="number" id="landAmount" placeholder="উদা: ৫, ১০, ২০ শতাংশ" min="1">
@@ -227,12 +227,11 @@
         <p>&copy; 2026 Digital Land Solution BD. সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
-    <script>
-        // ⚠️ নিচে আপনার আসল হোয়াটসঅ্যাপ নম্বরটি ৮৮ সহ বসিয়ে দিন
+   <script>
         const whatsappNumber = "8801335556732"; 
         const defaultMessage = "হ্যালো Digital Land Solution, আমি আপনাদের ল্যান্ড সার্ভিসের বিষয়ে জানতে চাই।";
         
-        document.getElementById('whatsappLink').href = `https://wa.me{whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
+        document.getElementById('whatsappLink').href = https://wa.me{whatsappNumber}?text=${encodeURIComponent(defaultMessage)};
 
         function calculateFee() {
             const rate = parseFloat(document.getElementById('surveyType').value);
@@ -243,7 +242,16 @@
                 return;
             }
             const totalCost = rate * amount;
-            resultBox.innerHTML = `আপনার আনুমানিক মোট সার্ভিস ফি: ${totalCost.toLocaleString('bn-BD')} টাকা।`;
+            resultBox.innerHTML = আপনার আনুমানিক মোট সার্ভিস ফি: ${totalCost.toLocaleString('bn-BD')} টাকা।;
+            resultBox.style.display = 'block';
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('ধন্যবাদ! আপনার অনুরোধটি সফলভাবে গৃহীত হয়েছে। আমাদের প্রতিনিধি দ্রুত আপনার সাথে যোগাযোগ করবেন।');
+            event.target.reset();
+        }
+    </script>
             resultBox.style.display = 'block';
         }
 
