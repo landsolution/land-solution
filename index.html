@@ -167,7 +167,7 @@
 </head>
 <body>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- Floating WhatsApp Button -->
     <a href="#" id="whatsappLink" class="whatsapp-float" target="_blank">
         <svg class="whatsapp-icon" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.413 9.848-9.842.002-2.63-1.013-5.101-2.861-6.953C17.14 1.957 14.663 1.94 12.009 1.94c-5.429 0-9.847 4.415-9.85 9.843-.001 1.988.513 3.931 1.49 5.672L2.632 21.39l4.015-1.054zM17.53 14.23c-.279-.14-1.651-.814-1.907-.907-.256-.094-.442-.14-.628.14-.186.279-.72.907-.883 1.093-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.387-.83-.74-1.39-1.653-1.553-1.932-.163-.279-.017-.43.122-.569.124-.125.279-.326.419-.489.14-.163.186-.279.279-.465.093-.186.046-.349-.023-.489-.069-.14-.628-1.512-.86-2.07-.226-.544-.455-.47-.628-.478-.163-.006-.349-.007-.535-.007-.186 0-.489.07-.745.349-.256.279-.977.954-.977 2.329s1.001 2.701 1.14 2.887c.14.186 1.97 3.01 4.773 4.217.667.287 1.188.459 1.595.587.67.214 1.28.183 1.763.111.538-.08 1.651-.675 1.884-1.326.232-.651.232-1.21.163-1.326-.07-.11-.256-.175-.536-.316z"/>
@@ -181,7 +181,7 @@
 
     <div class="container">
         
-        <!-- আমাদের সেবাসমূহ -->
+        <!-- সেবাসমূহ -->
         <h2 class="section-title">আমাদের সেবাসমূহ ও খরচ</h2>
         <div class="services-grid">
             <div class="service-card"><h3>📑 জমি খারিজের আবেদন</h3><p class="price">৫০০ ৳</p></div>
@@ -197,7 +197,7 @@
             <div class="service-card"><h3>⚠️ মিস কেস আবেদন</h3><p class="price">৫০০ ৳</p></div>
         </div>
 
-        <!-- ফি ক্যালকুলেটর -->
+        <!-- ক্যালকুলেটর -->
         <h2 class="section-title">সার্ভিস ফি ক্যালকুলেটর</h2>
         <div class="calculator-box">
             <div class="form-group">
@@ -224,26 +224,19 @@
             <div id="totalResult" class="result-box"></div>
         </div>
 
-        <!-- যোগাযোগ ফর্ম -->
+        <!-- কন্টাক্ট ফর্ম -->
         <h2 class="section-title">সরাসরি আবেদন করুন (WhatsApp)</h2>
         <div class="contact-section" style="max-width: 600px; margin: 0 auto;">
             <form onsubmit="handleSubmit(event)">
                 <div class="form-group">
-                    <label>আপনার নাম:</label>
+                    <label for="clientName">আপনার নাম:</label>
                     <input type="text" id="clientName" required placeholder="আপনার নাম লিখুন">
                 </div>
                 <div class="form-group">
-                    <label>মোবাইল নম্বর:</label>
+                    <label for="clientPhone">মোবাইল নম্বর:</label>
                     <input type="tel" id="clientPhone" required placeholder="01XXXXXXXXX">
                 </div>
                 <div class="form-group">
-                    <label>আপনার সেবা ও বিস্তারিত বিবরণ:</label>
+                    <label {for="clientMessage"}>আপনার সেবা ও বিস্তারিত বিবরণ:</label>
                     <input type="text" id="clientMessage" required placeholder="যেমন: জমি খারিজ, মৌজা:..., দাগ নং:...">
                 </div>
-                <button type="submit" class="btn" style="background-color: #1b4d3e;">আবেদন জমা দিন</button>
-            </form>
-        </div>
-
-    </div>
-
-    <footer>
