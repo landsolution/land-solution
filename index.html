@@ -3,248 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOHAN ENTERPRISE & DIGITAL LAND SOLUTION</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #1b4d3e;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.3rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.1rem;
-            color: #a3e2c9;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #1b4d3e;
-            font-size: 2rem;
-            border-bottom: 2px solid #1b4d3e;
-            padding-bottom: 10px;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-bottom: 50px;
-        }
-        .service-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 4px solid #1b4d3e;
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .service-card h3 {
-            color: #1b4d3e;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-        .service-card .price {
-            font-size: 1.3rem;
-            color: #27ae60;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .calculator-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            max-width: 600px;
-            margin: 0 auto 50px auto;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        .btn {
-            background-color: #27ae60;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-weight: bold;
-        }
-        .btn:hover {
-            background-color: #219653;
-        }
-        .result-box {
-            margin-top: 20px;
-            padding: 15px;
-            background: #e8f5e9;
-            border-left: 5px solid #27ae60;
-            border-radius: 4px;
-            display: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #1b4d3e;
-            text-align: center;
-        }
-        .contact-section {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        footer {
-            background-color: #111;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-            font-size: 1rem;
-            border-top: 3px solid #27ae60;
-        }
-        footer p {
-            margin-bottom: 5px;
-        }
-        .supervision {
-            color: #a3e2c9;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-top: 5px;
-        }
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            background-color: #128c7e;
-        }
-        .whatsapp-icon {
-            width: 35px;
-            height: 35px;
-            fill: white;
-        }
-    </style>
+    <title>ডিজিটাল ল্যান্ড সলিউশন | Digital Land Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me" id="whatsappLink" class="whatsapp-float" target="_blank">
-        <svg class="whatsapp-icon" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.845-4.413 9.848-9.842.002-2.63-1.013-5.101-2.861-6.953C17.14 1.957 14.663 1.94 12.009 1.94c-5.429 0-9.847 4.415-9.85 9.843-.001 1.988.513 3.931 1.49 5.672L2.632 21.39l4.015-1.054zM17.53 14.23c-.279-.14-1.651-.814-1.907-.907-.256-.094-.442-.14-.628.14-.186.279-.72.907-.883 1.093-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.387-.83-.74-1.39-1.653-1.553-1.932-.163-.279-.017-.43.122-.569.124-.125.279-.326.419-.489.14-.163.186-.279.279-.465.093-.186.046-.349-.023-.489-.069-.14-.628-1.512-.86-2.07-.226-.544-.455-.47-.628-.478-.163-.006-.349-.007-.535-.007-.186 0-.489.07-.745.349-.256.279-.977.954-.977 2.329s1.001 2.701 1.14 2.887c.14.186 1.97 3.01 4.773 4.217.667.287 1.188.459 1.595.587.67.214 1.28.183 1.763.111.538-.08 1.651-.675 1.884-1.326.232-.651.232-1.21.163-1.326-.07-.11-.256-.175-.536-.316z"/>
-        </svg>
-    </a>
-
+    <!-- হেডার / নেভিগেশন -->
     <header>
-        <h1>SOHAN ENTERPRISE & DIGITAL LAND SOLUTION</h1>
-        <p>নির্ভুল ও বিশ্বস্ত ডিজিটাল ভূমি সেবা ও আইনি পরামর্শ কেন্দ্র</p>
+        <div class="container">
+            <h1 class="logo">Digital Land Solutions</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#services">সেবা ও ফি</a></li>
+                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
+    <!-- হিরো সেকশন -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>ডিজিটাল ভূমি সেবা ও আইনি সমাধান</h2>
+            <p>আপনার জমি সংক্রান্ত সকল ঝামেলা ও জটিলতার সঠিক সমাধান পাবেন এখানে।</p>
+            <a href="https://wa.me/8801335556732" target="_blank" class="btn whatsapp-btn-hero">
+                <i class="fab fa-whatsapp"></i> হোয়াটসঅ্যাপে যোগাযোগ করুন
+            </a>
+        </div>
+    </section>
+
+    <!-- সেবা ও ফি তালিকা -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>আমাদের সেবাসমূহ এবং ফি তালিকা</h2>
+            <div class="service-grid">
+                
+                <div class="card">
+                    <h3>১. খারিজের আবেদন</h3>
+                    <p class="price">ফি: ৫০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>২. খতিয়ান আবেদন</h3>
+                    <p class="price">ফি: ১৭০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৩. খাজনার আবেদন</h3>
+                    <p class="price">ফি: ১০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৪. ম্যাপ আবেদন</h3>
+                    <p class="price">ফি: ৫০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৫. নামজারি খতিয়ানের সার্টিফাইড কপি তোলা</h3>
+                    <p class="price">ফি: ৩৫০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৬. মিসকেস আবেদন</h3>
+                    <p class="price">ফি: ৫০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৭. ম্যাপ পেন্টাগ্রাফ</h3>
+                    <p class="price">ফি: ৭০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৮. প্লট বা দাগ পরিমাপ বের করা</h3>
+                    <p class="price">ফি: ৩০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>৯. নাম বা দাগ নম্বর দিয়ে জমির তথ্য বের করা</h3>
+                    <p class="price">ফি: ১০০ টাকা</p>
+                </div>
+
+                <div class="card">
+                    <h3>১০. খতিয়ান বিশ্লেষণ</h3>
+                    <p class="price">ফি: ৩০০ টাকা</p>
+                </div>
+
+                <div class="card highlight">
+                    <h3>১১. আইনি পরামর্শ</h3>
+                    <p class="price">ফি: ৫০০ টাকা</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- আমাদের সম্পর্কে -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>কেন আমাদের সেবা নেবেন?</h2>
+            <p>আমরা দ্রুত, নির্ভুল এবং নির্ভরযোগ্যভাবে যেকোনো প্রকার ভূমি সংক্রান্ত সেবা প্রদান করে থাকি। ঘরে বসেই খুব সহজে তথ্য জমা দিয়ে সেবা পেতে আমাদের সাথে যোগাযোগ করুন।</p>
+        </div>
+    </section>
+
+    <!-- যোগাযোগ সেকশন -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>যোগাযোগ করুন</h2>
+            <p>যেকোনো সেবা পেতে বা বিস্তারিত জানতে আমাদের হোয়াটসঅ্যাপে মেসেজ দিন:</p>
+            <a href="https://wa.me/8801335556732" target="_blank" class="btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> ০১৩৩৫৫৫৬৭৩২ (WhatsApp)
+            </a>
+        </div>
+    </section>
+
+    <!-- ফ্লোটিং হোয়াটসঅ্যাপ বাটন (স্ক্রিনের নিচে ঝুলন্ত থাকবে) -->
+    <a href="https://wa.me/8801335556732" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- ফুটার -->
+    <footer>
+        <p>&copy; ২০২৬ ডিজিটাল ল্যান্ড সলিউশন। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+                    </html>
         
-        <!-- সেবাসমূহ -->
-        <h2 class="section-title">আমাদের সেবাসমূহ ও খরচ</h2>
-        <div class="services-grid">
-            <div class="service-card"><h3>📑 জমি খারিজের আবেদন</h3><p class="price">৫০০ ৳</p></div>
-            <div class="service-card"><h3>🗺️ ম্যাপের আবেদন</h3><p class="price">১,০০০ ৳</p></div>
-            <div class="service-card"><h3>💰 খাজনার আবেদন</h3><p class="price">১০০ ৳</p></div>
-            <div class="service-card"><h3>📈 জমি পেন্টাগ্রাফ</h3><p class="price">৫০০ ৳</p></div>
-            <div class="service-card"><h3>⚖️ আইনি পরামর্শ ফি</h3><p class="price">৫০০ ৳</p></div>
-            <div class="service-card"><h3>🗂️ জমির রেকর্ড তোলা</h3><p class="price">১৭০ ৳</p></div>
-            <div class="service-card"><h3>🔍 দাগ/মালিকের নামে জমি চেক</h3><p class="price">১০০ ৳</p></div>
-            <div class="service-card"><h3>📂 হারানো নামজারি খতিয়ান তোলা</h3><p class="price">৩,৫০০ ৳</p></div>
-            <div class="service-card"><h3>🧾 ডিসিআর (DCR) কাটা</h3><p class="price">১,২০০ ৳</p></div>
-            <div class="service-card"><h3>📏 জমি পরিমাপ (প্রতি দাগ)</h3><p class="price">৩০০ ৳</p></div>
-            <div class="service-card"><h3>⚠️ মিস কেস আবেদন</h3><p class="price">৫০০ ৳</p></div>
-        </div>
-
-        <!-- ক্যালকুলেটর -->
-        <h2 class="section-title">সার্ভিস ফি ক্যালকুলেটর</h2>
-        <div class="calculator-box">
-            <div class="form-group">
-                <label for="surveyType">সেবার ধরন নির্বাচন করুন:</label>
-                <select id="surveyType">
-                    <option value="500">জমি খারিজের আবেদন (৫০০ ৳)</option>
-                    <option value="1000">ম্যাপের আবেদন (১০০০ ৳)</option>
-                    <option value="100">খাজনার আবেদন (১০০ ৳)</option>
-                    <option value="500">জমি পেন্টাগ্রাফ (৫০০ ৳)</option>
-                    <option value="500">আইনি পরামর্শ ফি (৫০০ ৳)</option>
-                    <option value="170">জমির রেকর্ড তোলা (১৭০ ৳)</option>
-                    <option value="100">দাগ বা মালিকের নাম দিয়ে জমি চেক (১০০ ৳)</option>
-                    <option value="3500">হারানো নামজারি খতিয়ান তোলা (৩৫০০ ৳)</option>
-                    <option value="1200">ডিসিআর কাটা (১২০০ ৳)</option>
-                    <option value="300">জমি পরিমাপ - প্রতি দাগ (৩০০ ৳)</option>
-                    <option value="500">মিস কেস আবেদন (৫০০ ৳)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="landAmount">আবেদন বা দাগের সংখ্যা (পরিমাণ):</label>
-                <input type="number" id="landAmount" value="1" min="1">
-            </div>
-            <button class="btn" onclick="calculateFee()">মোট খরচ হিসাব করুন</button>
-            <div id="totalResult" class="result-box"></div>
-        </div>
-
-        <!-- কন্টাক্ট ফর্ম -->
-        <h2 class="section-title">সরাসরি আবেদন করুন (WhatsApp)</h2>
-        <div class="contact-section" style="max-width: 600px; margin: 0 auto;">
-            <form onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label for="clientName">আপনার নাম:</label>
-                    <input type="text" id="clientName" required placeholder="আপনার নাম লিখুন">
-                </div>
-                <div class="form-group">
-                    <label for="clientPhone">মোবাইল নম্বর:</label>
-                    <input type="tel" id="clientPhone" required placeholder="01XXXXXXXXX">
-                </div>
-                <div class="form-group">
